@@ -5092,7 +5092,7 @@ body {
   padding: 8px;
   width: 400px;
   margin-top: 40px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: solid 2px #c2d3ff;
   margin-left: auto;
   margin-right: auto;
@@ -5110,7 +5110,7 @@ body {
 
 .notify {
   background-color: #4f7df3;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-top: 5px;
   width: 400px;
   box-shadow: 2px 5px 10px #c2d3ff;

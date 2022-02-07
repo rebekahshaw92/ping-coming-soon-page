@@ -13,15 +13,15 @@ $lightRed: hsl(354, 100%, 66%);
    padding: 8px;
    width: 400px;
    margin-top: 40px;
-   border-radius: 20px;
+   border-radius: 30px;
    border: solid 2px $paleBlue;
    margin-left: auto;
    margin-right: auto;
-   &::placeholder {
-       padding: 20px !important;
-       color: $paleBlue;
-       font-weight: 300;
-   }
+    &::placeholder {
+     padding: 20px !important;
+     color: $paleBlue;
+     font-weight: 300;
+    }
 
    @include media-breakpoint-up(lg) {
        width: 95%;
@@ -30,7 +30,7 @@ $lightRed: hsl(354, 100%, 66%);
 
 .notify {
     background-color: $blue;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 5px;
     width: 400px;
     box-shadow: 2px 5px 10px $paleBlue;
