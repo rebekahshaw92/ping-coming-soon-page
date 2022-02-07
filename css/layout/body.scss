@@ -1,0 +1,75 @@
+$paleBlue: hsl(223, 100%, 88%);
+$veryDarkBlue: hsl(209, 33%, 12%);
+$blue: hsl(223, 87%, 63%);
+$gray: hsl(0, 0%, 59%);
+$lightRed: hsl(354, 100%, 66%);
+
+
+.img-top {
+    margin-top: 100px;
+}
+
+#email {
+   padding: 8px;
+   width: 400px;
+   margin-top: 40px;
+   border-radius: 20px;
+   border: solid 2px $paleBlue;
+   margin-left: auto;
+   margin-right: auto;
+   &::placeholder {
+       padding: 20px !important;
+       color: $paleBlue;
+       font-weight: 300;
+   }
+
+   @include media-breakpoint-up(lg) {
+       width: 95%;
+   }
+}
+
+.notify {
+    background-color: $blue;
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 400px;
+    box-shadow: 2px 5px 10px $paleBlue;
+    &:hover {
+       background-color: lighten($blue, 10%);
+    }
+    @include media-breakpoint-up(lg){
+        width: 200px;
+        margin-top: 40px;
+    }
+}
+
+
+.error {
+    position: relative;
+    color: $red;
+    transition: opacity .3s ease;
+    opacity: 1;
+    padding-top: 10px;
+    font-size: 16px;
+     p {
+       text-align: center;
+       @include media-breakpoint-up(lg) {
+           text-align: left;
+           padding-left: 40px;
+       }
+    }
+}
+
+.input-control.error { 
+    input {
+        border: solid 2px $lightRed !important;
+   } 
+}
+
+.main-img {
+    padding-top: 80px;
+    width: 90%;
+    @include media-breakpoint-up(lg) {
+        width: 55%;
+    }
+}

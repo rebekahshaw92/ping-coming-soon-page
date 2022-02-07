@@ -1,0 +1,33 @@
+$font: 'Libre Franklin', sans-serif;
+$gray: hsl(0, 0%, 59%);
+$veryDarkBlue: hsl(209, 33%, 12%);
+
+body {
+    font: $font;
+}
+
+.headerTitle {
+    color: $gray;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 50px;
+    font-weight: 300;
+    span {
+        color: $veryDarkBlue;
+        font-weight: 700;
+    }
+    @include media-breakpoint-up(lg){
+        font-size: 38px;
+    }
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 10px;
+    @include media-breakpoint-up(lg){
+        font-size: 16px;
+    }
+}
